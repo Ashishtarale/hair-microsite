@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Survey Form with Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .survey-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 450px;
+            margin: 0 auto;
+        }
+
+        .survey-container h2 {
+            text-align: center;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .question input,
+        .question select,
+        .question textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+
+        .recommendation-section {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9f7e9;
+            border-radius: 5px;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="survey-container">
+        <h2>Product Feedback Survey</h2>
+
+        <form id="surveyForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <label for="productRating">How would you rate the product?</label>
+                <select id="productRating" name="productRating" required>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Good</option>
+                    <option value="3">3 - Average</option>
+                    <option value="2">2 - Poor</option>
+                    <option value="1">1 - Very Poor</option>
+                </select>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <label for="featuresRating">Rate the features of the product:</label>
+                <textarea id="featuresRating" name="featuresRating" rows="4" placeholder="What did you like or dislike about the features?" required></textarea>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <label for="recommend">Would you recommend this product to others?</label>
+                <select id="recommend" name="recommend" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="button-container">
+                <button type="button" onclick="submitSurvey()">Submit Feedback</button>
+            </div>
+        </form>
+
+        <div class="form-footer">
+            <p>Thank you for your feedback!</p>
+        </div>
+
+        <!-- Recommendations Section -->
+        <div class="recommendation-section" id="recommendationsSection">
+            <h3>Based on your feedback, we recommend these products:</h3>
+            <ul id="recommendedProductsList">
+                <!-- Recommended products will be listed here -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function submitSurvey() {
+            // Get form data
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var productRating = document.getElementById("productRating").value;
+            var featuresRating = document.getElementById("featuresRating").value;
+            var recommend = document.getElementById("recommend").value;
+
+            // Check if all fields are filled out
+            if (!name || !email || !productRating || !featuresRating || !recommend) {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            // Prepare the result message
+            var resultMessage = `
+                Thank you for your feedback, ${name}!
+
+                Product Rating: ${productRating} - ${getRatingDescription(productRating)}
+                Feedback on Features: "${featuresRating}"
+                Would Recommend: ${recommend === "yes" ? "Yes" : "No"}
+            `;
+
+            // Show recommendation section
+            showRecommendations(productRating, recommend);
+
+            // Optionally reset the form
+            document.getElementById("surveyForm").reset();
+        }
+
+        // Helper function to convert rating number to description
+        function getRatingDescription(rating) {
+            switch (rating) {
+                case '5': return "Excellent";
+                case '4': return "Good";
+                case '3': return "Average";
+                case '2': return "Poor";
+                case '1': return "Very Poor";
+                default: return "No Rating";
+            }
+        }
+
+        // Function to display product recommendations based on the feedback
+        function showRecommendations(rating, recommend) {
+            var recommendationsSection = document.getElementById("recommendationsSection");
+            var recommendedProductsList = document.getElementById("recommendedProductsList");
+
+            // Clear any previous recommendations
+            recommendedProductsList.innerHTML = "";
+
+            // Show recommendation section
+            recommendationsSection.style.display = "block";
+
+            var recommendedProducts = [];
+
+            if (rating >= 4) {
+                recommendedProducts.push("Product A - Premium Quality");
+                recommendedProducts.push("Product B - Best Seller");
+            } else if (rating === 3) {
+                recommendedProducts.push("Product C - Mid-Range Option");
+            } else if (rating <= 2) {
+                recommendedProducts.push("Product D - Budget Option");
+                recommendedProducts.push("Product E - Basic Version");
+            }
+
+            if (recommend === "yes") {
+                recommendedProducts.push("Product F - Recommended by Experts");
+            }
+
+            // Display the recommended products
+            recommendedProducts.forEach(function(product) {
+                var li = document.createElement("li");
+                li.textContent = product;
+                recommendedProductsList.appendChild(li);
+            });
+        }
+    </script>
+
+</body>
+</html>
