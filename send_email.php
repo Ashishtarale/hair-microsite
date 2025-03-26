@@ -7,21 +7,34 @@ require 'assets/PHPMailer/src/PHPMailer.php';
 require 'assets/PHPMailer/src/SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = "ashishtarale002@gmail.com"; // Replace with your Gmail address
-    $subject = "New Survey Response";
-    
     $name = htmlspecialchars($_POST["name"]);
     $email = htmlspecialchars($_POST["email"]);
     $satisfaction = htmlspecialchars($_POST["satisfaction"]);
     $comments = htmlspecialchars($_POST["comments"]);
 
-    $message = "Name: $name\nEmail: $email\nSatisfaction: $satisfaction\nComments: $comments";
-    $headers = "From: $email\r\nReply-To: $email";
+    $mail = new PHPMailer(true);
 
-    if (mail($to, $subject, $message, $headers)) {
+    try {
+        // SMTP Configuration
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com'; // Gmail SMTP server
+        $mail->SMTPAuth = true;
+        $mail->Username = 'ashishtarale002@gmail.com'; // Replace with your Gmail
+        $mail->Password = 'yesb vxpa wied lpaq'; // Use an App Password, not your Gmail password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
+
+        // Email Details
+        $mail->setFrom('ashishtarale002@gmail.com', 'Survey Form'); // Replace with your Gmail
+        $mail->addAddress('ashishtarale002@gmail.com'); // Replace with recipient email
+
+        $mail->Subject = 'New Survey Response';
+        $mail->Body = "Name: $name\nEmail: $email\nSatisfaction: $satisfaction\nComments: $comments";
+
+        $mail->send();
         echo "Survey submitted successfully!";
-    } else {
-        echo "Error sending email.";
+    } catch (Exception $e) {
+        echo "Error sending email: {$mail->ErrorInfo}";
     }
 }
 ?>
