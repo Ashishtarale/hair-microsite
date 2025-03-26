@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Survey Form</title>
+    <style>
+        .step { display: none; }
+        .active { display: block; }
+    </style>
+</head>
+<body>
+    <form id="surveyForm" action="send_email.php" method="post">
+        <!-- Step 1 -->
+        <div class="step active">
+            <h2>Step 1: Personal Information</h2>
+            <label>Name: <input type="text" name="name" required></label><br>
+            <label>Email: <input type="email" name="email" required></label><br>
+            <button type="button" onclick="nextStep()">Next</button>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="step">
+            <h2>Step 2: Survey Questions</h2>
+            <label>How satisfied are you with our service? 
+                <select name="satisfaction">
+                    <option value="Very Satisfied">Very Satisfied</option>
+                    <option value="Satisfied">Satisfied</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Dissatisfied">Dissatisfied</option>
+                </select>
+            </label><br>
+            <button type="button" onclick="prevStep()">Back</button>
+            <button type="button" onclick="nextStep()">Next</button>
+        </div>
+        
+        <!-- Step 3 -->
+        <div class="step">
+            <h2>Step 3: Additional Comments</h2>
+            <label>Comments: <textarea name="comments"></textarea></label><br>
+            <button type="button" onclick="prevStep()">Back</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <script>
+        let currentStep = 0;
+        const steps = document.querySelectorAll(".step");
+        
+        function showStep(step) {
+            steps.forEach((s, index) => {
+                s.classList.toggle("active", index === step);
+            });
+        }
+        
+        function nextStep() {
+            if (currentStep < steps.length - 1) {
+                currentStep++;
+                showStep(currentStep);
+            }
+        }
+        
+        function prevStep() {
+            if (currentStep > 0) {
+                currentStep--;
+                showStep(currentStep);
+            }
+        }
+    </script>
+</body>
+</html>
