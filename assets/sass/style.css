@@ -80,7 +80,7 @@ html {
 }
 
 body {
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   color: #5A5A5A;
   background-color: #fff;
   font-size: 16px;
@@ -108,7 +108,7 @@ h4,
 h5,
 h6 {
   color: #1A1729;
-  /* font-family: "Roboto Serif", serif; */
+  /* font-family: "Helvetica Neue", sans-serif */
   font-family: "Montserrat", sans-serif;
 }
 
@@ -444,7 +444,7 @@ a:hover {
   display: inline-block;
   margin-top: 50px;
   text-transform: uppercase;
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
 }
 
 .wpo-section-title > span:before {
@@ -511,7 +511,7 @@ a:hover {
   -webkit-backface-visibility: hidden;
   z-index: 1;
   position: relative;
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   font-size: 16px !important;
   overflow: hidden;
 }
@@ -574,7 +574,7 @@ a:hover {
   -webkit-backface-visibility: hidden;
   z-index: 1;
   position: relative;
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   font-size: 20px;
   font-size: 1.11111rem;
   color: #C3B287;
@@ -832,7 +832,7 @@ a:hover {
   color: #6e6e6e;
   position: relative;
   font-size: 20px;
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
 }
 
 @media (max-width: 767px) {
@@ -1014,7 +1014,7 @@ a:hover {
   margin: 0 0 1.3em;
   position: relative;
   text-transform: capitalize;
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   font-weight: 500;
   border-radius: 5px;
 }
@@ -1141,7 +1141,7 @@ a:hover {
 }
 
 .blog-sidebar .about-widget a {
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   font-size: 14px;
   font-size: 0.77778rem;
   color: #1A1729;
@@ -1257,7 +1257,7 @@ a:hover {
   font-weight: 500;
   line-height: 1.3em;
   margin: 0 0 0.3em;
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
 }
 
 @media (max-width: 1199px) {
@@ -1445,7 +1445,7 @@ a:hover {
 }
 
 .pagination-wrapper .pg-pagination li {
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   float: left;
   margin-right: 10px;
 }
@@ -1625,7 +1625,7 @@ a:hover {
     position: relative;
     overflow: hidden;
     font-weight: 500;
-    font-family: "Roboto Serif", serif;
+    font-family: "Helvetica Neue", sans-serif
   }
   .wpo-site-header #navbar > ul > li .sub-menu a:after {
     position: absolute;
@@ -2756,7 +2756,7 @@ a:hover {
   font-style: normal;
   font-weight: 500;
   margin-bottom: 0px;
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
 }
 
 @media (max-width: 991px) {
@@ -4460,7 +4460,7 @@ a:hover {
   font-weight: 500;
   line-height: normal;
   color: #1A1729;
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif;
   margin-bottom: 0;
 }
 
@@ -7920,7 +7920,7 @@ a:hover {
   line-height: 1.2em;
   font-weight: 400;
   margin: -0.27em 0 0.7em;
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
 }
 
 @media (max-width: 991px) {
@@ -7960,7 +7960,7 @@ a:hover {
   text-decoration: underline;
   color: #6e6e6e;
   text-transform: uppercase;
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   font-size: 16px;
 }
 
@@ -8297,7 +8297,7 @@ a:hover {
   font-size: 1.94444rem;
   margin: -0.22em 0 0.7em;
   line-height: 1.3em;
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
 }
 
 @media (max-width: 991px) {
@@ -8444,7 +8444,7 @@ a:hover {
 }
 
 .wpo-blog-single-section .tag-share .tag > span, .wpo-blog-single-section .tag-share-s2 .tag > span {
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   color: #1A1729;
   font-weight: 400;
   display: inline-block;
@@ -8535,7 +8535,7 @@ a:hover {
 }
 
 .wpo-blog-single-section .author-box .author-name {
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   font-size: 24px;
   font-size: 1.33333rem;
   font-weight: 400;
@@ -8684,7 +8684,7 @@ a:hover {
 }
 
 .wpo-blog-single-section .more-posts .post-name {
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   font-size: 18px;
   font-size: 1rem;
   color: #1A1729;
@@ -8782,7 +8782,7 @@ a:hover {
 }
 
 .wpo-blog-single-section .comments-area .comments-meta h4 {
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   font-size: 18px;
   font-size: 1rem;
   color: #1A1729;
@@ -8798,7 +8798,7 @@ a:hover {
   text-transform: none;
   display: inline-block;
   padding-left: 5px;
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
 }
 
 @media (max-width: 767px) {
@@ -8808,7 +8808,7 @@ a:hover {
 }
 
 .wpo-blog-single-section .comments-area .comment-reply-link {
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   font-size: 14px;
   font-size: 0.77778rem;
   font-weight: 400;
@@ -8816,7 +8816,7 @@ a:hover {
   text-align: center;
   border-radius: 50px;
   display: inline-block;
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   text-decoration: underline;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -8915,7 +8915,7 @@ a:hover {
 }
 
 .wpo-blog-single-section .comment-respond .form-submit input {
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   max-width: 180px;
   background-color: #1e2845;
   color: #fff;
@@ -9072,7 +9072,7 @@ a:hover {
 
 .wpo-contact-pg-section form .submit-area .theme-btn {
   border-radius: 30px;
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   font-size: 16px;
 }
 
@@ -9318,7 +9318,7 @@ a:hover {
   -webkit-backface-visibility: hidden;
   z-index: 1;
   position: relative;
-  font-family: "Roboto Serif", serif;
+  font-family: "Helvetica Neue", sans-serif
   font-size: 25px !important;
   font-size: 1.11111rem;
   overflow: hidden;
@@ -10684,7 +10684,7 @@ div.sticky {
 .experience-border-2 {
   padding: 17px;
   background: #fff;
-  width: 460px;
+  width: auto;
   border: 1px solid #ACA79A;
   border-radius: 103px;
   display: inline-block;
@@ -10774,14 +10774,14 @@ div.sticky {
     font-style: normal;
     font-weight: 500;
     margin-bottom: 0px;
-    font-family: "Roboto Serif", serif;
+    font-family: "Helvetica Neue", sans-serif
   }
   .wpo-hero-style-1 .wpo-supporter .wpo-supporter-text h3, .wpo-hero-style-2 .wpo-supporter .wpo-supporter-text h3 {
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
     margin-bottom: 0px;
-    font-family: "Roboto Serif", serif;
+    font-family: "Helvetica Neue", sans-serif
   }
 }
 
@@ -10862,4 +10862,51 @@ div.sticky {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.hair-loss-options {
+  display: flex;
+  gap: 15px;
+  margin: 40px 0;
+}
+
+.hair-option {
+  text-align: center;
+  cursor: pointer;
+}
+
+.hair-option img {
+  width: auto;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+.hair-option input:checked + img {
+  border-color: #c3b287;
+}
+
+.hair-option span {
+  display: block;
+  margin-top: 5px;
+  font-size: 22px;
+}
+
+#suggestions {
+  border: 1px solid #c3b287;
+  max-width: 100%;
+  background: #fff;
+  position: absolute;
+}
+.suggestion {
+  padding: 8px;
+  cursor: pointer;
+}
+.suggestion:hover {
+  background: #f0f0f0;
+}
+
+.wpo-contact-pg-section form input .radio-btn{
+  width: 50px !important;
 }

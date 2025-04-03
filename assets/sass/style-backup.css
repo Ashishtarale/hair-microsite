@@ -66,6 +66,9 @@ Version:        1.0.0
 ----------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&amp;display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
 /* 1.1 Theme Reset Style */
 html {
   font-size: 18px;
@@ -77,7 +80,7 @@ html {
 }
 
 body {
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
   color: #5A5A5A;
   background-color: #fff;
   font-size: 16px;
@@ -92,6 +95,7 @@ body {
 }
 
 p {
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   color: #5A5A5A;
   line-height: 1.8em;
@@ -104,7 +108,8 @@ h4,
 h5,
 h6 {
   color: #1A1729;
-  font-family: "Urbanist";
+  /* font-family: "Roboto Serif", serif; */
+  font-family: "Montserrat", sans-serif;
 }
 
 ul {
@@ -371,9 +376,9 @@ a:hover {
 .wpo-section-title-s3 {
   position: relative;
   text-align: center;
-  max-width: 555px;
+  max-width: 600px;
   margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 767px) {
@@ -389,7 +394,7 @@ a:hover {
 .wpo-section-title-s3 h2 {
   font-size: 30px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: normal;
   color: #000;
   margin-bottom: 15px;
@@ -415,6 +420,7 @@ a:hover {
 .wpo-section-title-s2 p,
 .wpo-section-title-s3 p {
   font-size: 18px;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 35px;
@@ -438,7 +444,7 @@ a:hover {
   display: inline-block;
   margin-top: 50px;
   text-transform: uppercase;
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
 }
 
 .wpo-section-title > span:before {
@@ -498,16 +504,15 @@ a:hover {
   color: #000;
   display: inline-block;
   font-weight: 500;
-  padding: 15px 45px;
+  padding: 10px 15px;
   border: 0;
   border-radius: 15px;
   text-transform: capitalize;
   -webkit-backface-visibility: hidden;
   z-index: 1;
   position: relative;
-  font-family: "Urbanist";
-  font-size: 20px;
-  font-size: 1.11111rem;
+  font-family: "Roboto Serif", serif;
+  font-size: 16px !important;
   overflow: hidden;
 }
 
@@ -569,7 +574,7 @@ a:hover {
   -webkit-backface-visibility: hidden;
   z-index: 1;
   position: relative;
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
   font-size: 20px;
   font-size: 1.11111rem;
   color: #C3B287;
@@ -610,7 +615,7 @@ a:hover {
   border-radius: 35px;
   font-size: 20px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 40px;
   color: #fff;
   -webkit-transition: all .3s;
@@ -827,7 +832,7 @@ a:hover {
   color: #6e6e6e;
   position: relative;
   font-size: 20px;
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
 }
 
 @media (max-width: 767px) {
@@ -870,7 +875,7 @@ a:hover {
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 1000;
+  z-index: 10000;
   overflow: hidden;
 }
 
@@ -1009,8 +1014,8 @@ a:hover {
   margin: 0 0 1.3em;
   position: relative;
   text-transform: capitalize;
-  font-family: "Urbanist";
-  font-weight: 700;
+  font-family: "Roboto Serif", serif;
+  font-weight: 500;
   border-radius: 5px;
 }
 
@@ -1125,7 +1130,7 @@ a:hover {
 
 .blog-sidebar .about-widget h4 {
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 15px;
 }
 
@@ -1136,7 +1141,7 @@ a:hover {
 }
 
 .blog-sidebar .about-widget a {
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
   font-size: 14px;
   font-size: 0.77778rem;
   color: #1A1729;
@@ -1252,7 +1257,7 @@ a:hover {
   font-weight: 500;
   line-height: 1.3em;
   margin: 0 0 0.3em;
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
 }
 
 @media (max-width: 1199px) {
@@ -1391,7 +1396,7 @@ a:hover {
 
 .blog-sidebar .wpo-contact-widget .wpo-contact-widget-inner h2 {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
   margin-bottom: 20px;
   line-height: 35px;
@@ -1440,7 +1445,7 @@ a:hover {
 }
 
 .pagination-wrapper .pg-pagination li {
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
   float: left;
   margin-right: 10px;
 }
@@ -1462,7 +1467,7 @@ a:hover {
   line-height: 50px;
   font-size: 16px;
   font-size: 0.88889rem;
-  font-weight: 600;
+  font-weight: 400;
   color: #1A1729;
   background: #f5f5f5;
   display: block;
@@ -1521,7 +1526,7 @@ a:hover {
   /*navbar collaps less then 992px*/
   /*** cart-search-contact ***/
   background-color: #fff;
-  z-index: 99;
+  z-index: 9999;
   position: relative;
   /* navigation open and close btn hide for width screen */
   /* style for navigation less than 992px */
@@ -1561,7 +1566,7 @@ a:hover {
   color: #060530;
   font-size: 50px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 60px;
 }
 .wpo-site-header .navigation .navbar-header .navbar-brand img{
@@ -1620,7 +1625,7 @@ a:hover {
     position: relative;
     overflow: hidden;
     font-weight: 500;
-    font-family: "Urbanist";
+    font-family: "Roboto Serif", serif;
   }
   .wpo-site-header #navbar > ul > li .sub-menu a:after {
     position: absolute;
@@ -1676,7 +1681,7 @@ a:hover {
     font-size: 15px;
     font-size: 0.83333rem;
     color: #fff;
-    font-weight: 600;
+    font-weight: 400;
   }
   .wpo-site-header #navbar > ul > li a:hover, .wpo-site-header #navbar > ul > li a.active {
     color: #fff;
@@ -1902,10 +1907,10 @@ a:hover {
 
 .wpo-site-header .header-right .theme-btn {
   border-radius: 12px;
-  border: 2px solid #000;
+  border: 1px solid #ABA596;
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
   background: none;
   color: #1A1729;
@@ -2596,7 +2601,7 @@ a:hover {
 .wpo-hero-style-2 .wpo-hero-title h2 {
   font-size: 50px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 65px;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -2647,7 +2652,7 @@ a:hover {
   .wpo-hero-style-1 .wpo-hero-title h2.wpo-hero-title-2 {
     font-size: 22px !important;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 30px !important;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -2696,7 +2701,7 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   max-width: 420px;
-  margin-right: -80px;
+  /* margin-right: -80px; */
   margin-left: auto;
   position: relative;
 }
@@ -2728,7 +2733,7 @@ a:hover {
     width: 280px;
     left: 0;
     margin: 0 auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 }
 
@@ -2749,8 +2754,9 @@ a:hover {
 .wpo-hero-style-2 .wpo-supporter .wpo-supporter-text h3 {
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 0px;
+  font-family: "Roboto Serif", serif;
 }
 
 @media (max-width: 991px) {
@@ -2764,8 +2770,9 @@ a:hover {
 .wpo-hero-style-2 .wpo-supporter .wpo-supporter-text p {
   margin-bottom: 0;
   font-style: normal;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 27px;
 }
 
@@ -2812,7 +2819,6 @@ a:hover {
   border-radius: 65px;
   -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
-  margin-left: -150px;
   z-index: 11;
   position: relative;
 }
@@ -2833,7 +2839,8 @@ a:hover {
   margin-bottom: 0;
   font-size: 25px;
   font-style: normal;
-  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   line-height: normal;
   font-style: normal;
   color: #000;
@@ -2855,11 +2862,11 @@ a:hover {
 
 .wpo-hero-style-1 .experience .icon span,
 .wpo-hero-style-2 .experience .icon span {
-  width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     overflow: visible;
     /* border: 2px solid #A48F5B; */
-    line-height: 85px;
+    line-height: 65px;
     background: #fff;
     text-align: center;
     border-radius: 50%;
@@ -2868,7 +2875,7 @@ a:hover {
     display: block;
     color: #fff;
     font-size: 70px;
-    font-weight: 700;
+    font-weight: 500;
     color: #000;
 }
 
@@ -3379,7 +3386,7 @@ a:hover {
   color: #fff;
   font-size: 50px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 80px;
   text-transform: uppercase;
 }
@@ -3404,7 +3411,7 @@ a:hover {
   color: #fff;
   font-size: 80px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 100px;
   text-transform: uppercase;
 }
@@ -3437,7 +3444,7 @@ a:hover {
 .wpo-hero-style-4 .wpo-hero-content .wpo-hero-text p {
   font-size: 25px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 40px;
   max-width: 432px;
   color: #fff;
@@ -3505,7 +3512,7 @@ a:hover {
 .wpo-hero-style-3 .wpo-hero-content .slide-btns ul li.video-text a,
 .wpo-hero-style-4 .wpo-hero-content .slide-btns ul li.video-text a {
   color: #fff;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
   width: 100%;
   height: 100%;
@@ -3741,7 +3748,7 @@ a:hover {
 .wpo-hero-style-4 .wpo-supporter .wpo-supporter-text h3 {
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 0px;
   color: #fff;
 }
@@ -3998,7 +4005,7 @@ a:hover {
 
 .wpo-hero-style-4 .wpo-hero-content .wpo-hero-text span {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 70px;
   text-transform: uppercase;
 }
@@ -4111,7 +4118,7 @@ a:hover {
   text-align: center;
   font-size: 50px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 65px;
   max-width: 510px;
   margin: 0 auto;
@@ -4149,7 +4156,22 @@ a:hover {
   color: #B3B3B3;
   font-size: 20px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
+  line-height: 30px;
+  border: 1px solid #A8A8A8;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+ input.genderRadio {
+  width: 30px !important;
+  height: auto !important;
+  padding: 25px 35px;
+  margin-left: 20px;;
+  padding-right: 230px;
+  color: #B3B3B3;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
   line-height: 30px;
   border: 1px solid #A8A8A8;
   background: rgba(255, 255, 255, 0.8);
@@ -4176,7 +4198,7 @@ a:hover {
   color: #fff;
   font-size: 20px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 30px;
   border: 0;
   position: absolute;
@@ -4435,10 +4457,10 @@ a:hover {
 .wpo-fun-fact-section-s4 .grid h3 {
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: normal;
   color: #1A1729;
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
   margin-bottom: 0;
 }
 
@@ -4478,7 +4500,7 @@ a:hover {
 .wpo-fun-fact-section-s4 .grid h3 + p {
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
   margin: 0;
   color: #625F71;
@@ -4567,7 +4589,7 @@ a:hover {
 .wpo-about-section-s4 .about-content .about-info h4 {
   font-size: 30px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 50px;
   margin-bottom: 0;
 }
@@ -4739,7 +4761,7 @@ a:hover {
 .wpo-service-area-s3 .wpo-service-item .wpo-service-text h3 {
   font-size: 20px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 30px;
   margin-bottom: 0px;
 }
@@ -4935,7 +4957,7 @@ a:hover {
 .wpo-project-section-s2 .wpo-project-item .wpo-project-text span {
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 35px;
   padding: 8px 32px;
   background: #000;
@@ -4946,7 +4968,7 @@ a:hover {
 .wpo-project-section-s2 .wpo-project-item .wpo-project-text h2 {
   font-size: 35px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 50px;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -5131,7 +5153,7 @@ a:hover {
 .wpo-testimonials-section-s3 .testimonials-left h3 {
   font-size: 60px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 75px;
   margin-bottom: 20px;
 }
@@ -5155,7 +5177,7 @@ a:hover {
 .wpo-testimonials-section .testimonials-left h3 {
   font-size: 30px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 40px;
   margin-bottom: 20px;
 }
@@ -5245,7 +5267,7 @@ a:hover {
 .wpo-testimonials-section .testimonials-wrapper .testimonials-item .testimonials-item-top,
 .wpo-testimonials-section-s2 .testimonials-wrapper .testimonials-item .testimonials-item-top,
 .wpo-testimonials-section-s3 .testimonials-wrapper .testimonials-item .testimonials-item-top {
-  padding: 40px;
+  padding: 35px;
   position: relative;
   z-index: 1;
   padding-top: 10px;
@@ -5351,7 +5373,7 @@ a:hover {
 .wpo-testimonials-section-s3 .testimonials-wrapper .testimonials-item .testimonials-item-bottom .testimonials-item-bottom-author-text h3 {
   font-size: 26px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 40px;
   margin-top: 16px;
 }
@@ -5729,7 +5751,7 @@ a:hover {
 .wpo-blog-section .wpo-blog-item .wpo-blog-content h2 {
   font-size: 25px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 35px;
 }
 
@@ -5757,7 +5779,7 @@ a:hover {
   color: #A48F5B;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 35px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -5772,7 +5794,7 @@ a:hover {
 .wpo-about-section-s2 .about-content h2 {
   font-size: 60px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: normal;
   color: #000;
   margin-bottom: 30px;
@@ -5821,7 +5843,7 @@ a:hover {
 .wpo-about-section-s2 .about-content .about-funfact h3 {
   font-size: 50px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 35px;
 }
 
@@ -5841,7 +5863,7 @@ a:hover {
 .wpo-about-section-s2 .about-content .about-funfact small {
   font-size: 25px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 50px;
   color: #000;
 }
@@ -6102,7 +6124,7 @@ a:hover {
 .wpo-about-section-s4 .about-wrap .about-content h2 {
   font-size: 50px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: normal;
   color: #fff;
   margin-bottom: 30px;
@@ -6307,10 +6329,10 @@ a:hover {
 }
 
 .wpo-project-section-s3 .wpo-project-wrap .wpo-project-item .wpo-project-text h2 {
-  font-size: 30px;
+  font-size: 26px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 50px;
+  font-weight: 500;
+  line-height: 30px;
 }
 
 @media (max-width: 1600px) {
@@ -6347,7 +6369,7 @@ a:hover {
 .wpo-project-section-s3 .wpo-project-wrap .wpo-project-item .wpo-project-text span {
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 35px;
   background: -webkit-gradient(linear, right top, left top, color-stop(6.52%, #F2CD8C), color-stop(95.22%, #CC9260));
   background: linear-gradient(270deg, #F2CD8C 6.52%, #CC9260 95.22%);
@@ -6563,7 +6585,7 @@ a:hover {
 .digital-marque-sec .digital-marque h1 {
   font-size: 70px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: normal;
   white-space: nowrap;
   will-change: transform;
@@ -6893,7 +6915,7 @@ a:hover {
 .wpo-contact-section .contact-info-wrap .contact-info-title h3 {
   font-size: 60px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 70px;
   color: #fff;
 }
@@ -7289,7 +7311,7 @@ a:hover {
 .protfolio-slide-area .thumb-text span {
   font-size: 200px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 190px;
   font-family: 'Conv_Now-Bold';
   z-index: 999;
@@ -7320,7 +7342,7 @@ a:hover {
   color: #1A1729;
   padding: 0;
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .wpo-protfolio-area-3 .wpo-protfolio-text h2 a:hover {
@@ -7445,12 +7467,12 @@ a:hover {
   padding: 10px 0;
   font-size: 16px;
   color: #1A1729;
-  font-weight: 600;
+  font-weight: 400;
   position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .wpo-project-single-area .wpo-project-single-wrap .wpo-project-single-item .wpo-project-single-content-des-right ul li span {
@@ -7475,11 +7497,11 @@ a:hover {
 
 .wpo-project-single-area .wpo-project-single-wrap .list-widget ul li {
   padding: 7px 0;
-  padding-left: 35px;
+  padding-left: 5px;
   position: relative;
 }
 
-.wpo-project-single-area .wpo-project-single-wrap .list-widget ul li:before {
+/* .wpo-project-single-area .wpo-project-single-wrap .list-widget ul li:before {
   position: absolute;
   left: 0;
   top: 50%;
@@ -7495,7 +7517,7 @@ a:hover {
   text-align: center;
   color: #C3B287;
   font-size: 14px;
-}
+} */
 
 .wpo-project-single-area .wpo-project-single-wrap .wpo-p-details-img {
   margin-bottom: 10px;
@@ -7535,7 +7557,7 @@ a:hover {
 
 .wpo-project-single-area .wpo-project-single-wrap .wpo-project-single-item-quote span {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 @media (max-width: 991px) {
@@ -7642,11 +7664,11 @@ a:hover {
 
 .wpo-service-single-area .wpo-service-single-wrap .list-widget ul li {
   padding: 10px 0;
-  padding-left: 35px;
+  padding-left: 5px;
   position: relative;
 }
 
-.wpo-service-single-area .wpo-service-single-wrap .list-widget ul li:before {
+/* .wpo-service-single-area .wpo-service-single-wrap .list-widget ul li:before {
   position: absolute;
   left: 0;
   top: 50%;
@@ -7662,7 +7684,7 @@ a:hover {
   text-align: center;
   color: #C3B287;
   font-size: 14px;
-}
+} */
 
 .wpo-service-single-area .wpo-service-single-wrap .wpo-p-details-img {
   margin-bottom: 10px;
@@ -7693,7 +7715,7 @@ a:hover {
 }
 
 .wpo-service-single-area .wpo-service-single-wrap .wpo-service-area .wpo-service-item h2 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 22px;
   margin-bottom: 12px;
   margin-top: 10px;
@@ -7896,9 +7918,9 @@ a:hover {
   font-size: 34px;
   font-size: 1.88889rem;
   line-height: 1.2em;
-  font-weight: 600;
+  font-weight: 400;
   margin: -0.27em 0 0.7em;
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
 }
 
 @media (max-width: 991px) {
@@ -7938,7 +7960,7 @@ a:hover {
   text-decoration: underline;
   color: #6e6e6e;
   text-transform: uppercase;
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
   font-size: 16px;
 }
 
@@ -8275,7 +8297,7 @@ a:hover {
   font-size: 1.94444rem;
   margin: -0.22em 0 0.7em;
   line-height: 1.3em;
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
 }
 
 @media (max-width: 991px) {
@@ -8299,7 +8321,7 @@ a:hover {
 .wpo-blog-single-section .post h3 {
   font-size: 24px;
   font-size: 1.33333rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.3em;
   margin: 1.8em 0 1em;
 }
@@ -8422,9 +8444,9 @@ a:hover {
 }
 
 .wpo-blog-single-section .tag-share .tag > span, .wpo-blog-single-section .tag-share-s2 .tag > span {
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
   color: #1A1729;
-  font-weight: 600;
+  font-weight: 400;
   display: inline-block;
   padding-right: 15px;
   text-transform: uppercase;
@@ -8513,10 +8535,10 @@ a:hover {
 }
 
 .wpo-blog-single-section .author-box .author-name {
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
   font-size: 24px;
   font-size: 1.33333rem;
-  font-weight: 600;
+  font-weight: 400;
   display: inline-block;
   margin-bottom: 10px;
   color: #1A1729;
@@ -8657,12 +8679,12 @@ a:hover {
   font-size: 0.77778rem;
   color: #6e6e6e;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 2px;
 }
 
 .wpo-blog-single-section .more-posts .post-name {
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
   font-size: 18px;
   font-size: 1rem;
   color: #1A1729;
@@ -8760,7 +8782,7 @@ a:hover {
 }
 
 .wpo-blog-single-section .comments-area .comments-meta h4 {
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
   font-size: 18px;
   font-size: 1rem;
   color: #1A1729;
@@ -8776,7 +8798,7 @@ a:hover {
   text-transform: none;
   display: inline-block;
   padding-left: 5px;
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
 }
 
 @media (max-width: 767px) {
@@ -8786,15 +8808,15 @@ a:hover {
 }
 
 .wpo-blog-single-section .comments-area .comment-reply-link {
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
   font-size: 14px;
   font-size: 0.77778rem;
-  font-weight: 600;
+  font-weight: 400;
   color: #1A1729;
   text-align: center;
   border-radius: 50px;
   display: inline-block;
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
   text-decoration: underline;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -8893,7 +8915,7 @@ a:hover {
 }
 
 .wpo-blog-single-section .comment-respond .form-submit input {
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
   max-width: 180px;
   background-color: #1e2845;
   color: #fff;
@@ -8940,7 +8962,7 @@ a:hover {
 .wpo-contact-pg-section .wpo-contact-title h2 {
   font-size: 35px;
   font-size: 1.94444rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -8951,17 +8973,26 @@ a:hover {
   }
 }
 
+.wpo-contact-pg-section form label{
+  width: 100%;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+
+}
 .wpo-contact-pg-section form input,
 .wpo-contact-pg-section form select,
 .wpo-contact-pg-section form textarea {
   background: #f5f5f5;
   width: 100%;
   height: 45px;
+  font-family: "Montserrat", sans-serif;
   border: 1px solid transparent;
   border-radius: 10px;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   padding-left: 10px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 991px) {
@@ -9041,7 +9072,7 @@ a:hover {
 
 .wpo-contact-pg-section form .submit-area .theme-btn {
   border-radius: 30px;
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
   font-size: 16px;
 }
 
@@ -9050,8 +9081,6 @@ a:hover {
 }
 
 .wpo-contact-pg-section form > div {
-  width: calc(50% - 30px);
-  float: left;
   margin: 0 15px 25px;
 }
 
@@ -9136,13 +9165,15 @@ a:hover {
 
 .wpo-contact-pg-section .wpo-contact-form-area {
   padding: 50px;
-  background: #fff;
+  background: #eae6dc;
   -webkit-box-shadow: 0px 1px 15px 0px rgba(62, 65, 159, 0.1);
           box-shadow: 0px 1px 15px 0px rgba(62, 65, 159, 0.1);
   padding-bottom: 0;
   margin-bottom: -125px;
   position: relative;
   z-index: 99;
+  border-radius: 20px;
+  height: auto;
 }
 
 @media (max-width: 767px) {
@@ -9209,7 +9240,7 @@ a:hover {
 .wpo-hero-style-2 .wpo-hero-title-2 h2 {
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 65px;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -9254,9 +9285,9 @@ a:hover {
   }
 }
  .wpo-hero-style-1 .wpo-hero-title h2.wpo-hero-title-2{
-  font-size: 30px;
+  font-size: 26px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 40px;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -9265,9 +9296,9 @@ a:hover {
 @media (max-width: 1650px) {
 
 .wpo-hero-style-1 .wpo-hero-title h2.wpo-hero-title-2 {
-  font-size: 24px;
+  font-size: 21px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 40px;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -9279,7 +9310,7 @@ a:hover {
   background: none;
   color: #000;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 400;
   padding: 15px 45px;
   border: 0;
   border-radius: 0px;
@@ -9287,7 +9318,7 @@ a:hover {
   -webkit-backface-visibility: hidden;
   z-index: 1;
   position: relative;
-  font-family: "Urbanist";
+  font-family: "Roboto Serif", serif;
   font-size: 25px !important;
   font-size: 1.11111rem;
   overflow: hidden;
@@ -9309,7 +9340,7 @@ a:hover {
   font-size: 30px;
   font-style: normal;
   color: #000;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 45px;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -9356,7 +9387,7 @@ a:hover {
 }
 .team-card_title {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 7px;
 }
 .team-card_title a {
@@ -9395,13 +9426,13 @@ a:hover {
   background: #F6F5F3;
 }
 .pricing-card {
-  padding: 50px;
+  padding: 40px;
   border-radius: 20px;
   margin-bottom: 25px;
 }
 .pricing-card .pricing-card_title {
-  font-size: 26px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
   letter-spacing: -0.48px;
   margin-top: -0.2em;
   margin-bottom: 12px;
@@ -9411,17 +9442,21 @@ a:hover {
 }
 .pricing-card .pricing-card_price {
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: -1.8px;
 }
 .pricing-card .pricing-card_price .duration {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: -0.4px;
 }
+.pricing-card img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
 .pricing-card p {
-  font-size: 18px;
-  margin-bottom: 25px;
+  font-size: 16px;
   /* Medium Large devices */
 }
 @media (max-width: 1399px) {
@@ -9435,7 +9470,7 @@ a:hover {
 .pricing-card .checklist li {
   font-family: var(--title-font);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: -0.14px;
   text-transform: uppercase;
 }
@@ -9479,7 +9514,7 @@ a:hover {
   position: relative;
   overflow: hidden;
   display: block;
-  height: 17px;
+  height: 20px;
   line-height: normal;
 }
 .link-effect .effect-1 {
@@ -9504,7 +9539,7 @@ a:hover {
   color: #000;
   font-family: var(--title-font);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   padding: 21.5px 40px;
   border-radius: 0;
   overflow: hidden;
@@ -9557,7 +9592,7 @@ a:hover {
 }
 .accordion-card .accordion-button {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   font-family: var(--title-font);
   color: #000;
   border: 0;
@@ -9597,7 +9632,7 @@ a:hover {
 }
 .accordion-card .accordion-button .faq-number {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   margin-right: 40px;
 }
 .accordion-card .accordion-button:focus {
@@ -9704,6 +9739,7 @@ a:hover {
 }
 .portfolio-wrap .portfolio-details .portfolio-meta li {
   display: inline-block;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 400;
   position: relative;
@@ -9720,7 +9756,7 @@ a:hover {
   display: none;
 }
 .portfolio-wrap .portfolio-details .portfolio-title {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 30px;
   margin-bottom: 23px;
 }
@@ -10456,62 +10492,374 @@ div.sticky {
   margin: 20px 0;
 }
 
-
-
 /* ------------form-------------- */
 #regForm {
-  background-color: #ffffff;
-  margin: 100px auto;
-  padding: 40px;
-  width: 70%;
-  min-width: 300px;
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  .contact-validation-active button {
+    background-color: #c3b287;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+  }
+  
+  .contact-validation-active button:hover {
+    opacity: 0.8;
+  }
+  
+  .contact-validation-active #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .contact-validation-active .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #c3b287;
+  }
+
+
+
+
+  .radio-buttons {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .custom-radio input {
+    display: none;
+  }
+
+  .radio-btn {
+    margin: 6px 10px;
+    width: 100%;
+    height: 100px;
+    border: 3px solid transparent;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #c3c3c367;
+    cursor: pointer;
+  }
+
+  .radio-btn > i {
+    color: #ffffff;
+    background-color: #c3b287;
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(4);
+    border-radius: 50px;
+    padding: 3px;
+    transition: 0.2s;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .radio-btn .hobbies-icon {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+  }
+
+  .radio-btn .hobbies-icon img {
+    color: #c3b287;
+    line-height: 80px;
+    width: 150px;
+  }
+
+  .radio-btn .hobbies-icon h3 {
+    color: #5A5A5A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+    /* text-transform: uppercase; */
+  }
+
+  .radio-btn .hobbies-icon h3 samp p{
+    color: #5A5A5A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    /* text-transform: uppercase; */
+  }
+
+  .custom-radio input:checked + .radio-btn {
+    border: 3px solid #c3b287;
+  }
+
+  .custom-radio input:checked + .radio-btn > i {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+
+  }
+
+
+  .list-widget ul li {
+    padding: 10px 0;
+    font-size: 20px;
+    padding-left: 5px;
+    position: relative;
+    list-style: none;
+    color: #000;
+  }
+  .list-widget ul li a{
+    padding: 10px 0;
+    font-size: 20px;
+    color: #000;
+  }
+  /* .list-widget ul li:before{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    line-height: 20px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    content: "\e64c";
+    font-family: "themify";
+    text-align: center;
+    color: #C3B287;
+    font-size: 11px;
+} */
+
+  .experience-border {
+    padding: 17px;
+    border: 1px solid #ACA79A;
+    display: inline-block;
+    margin-left: -100px;
+    border-radius: 90px;
+    z-index: 10000000;
+    position: relative;
+    background: #fff;
 }
 
-/* Mark input boxes that gets an error on validation: */
-input.invalid {
-  background-color: #ffdddd;
+.experience-border-2 {
+  padding: 17px;
+  background: #fff;
+  width: 460px;
+  border: 1px solid #ACA79A;
+  border-radius: 103px;
+  display: inline-block;
+  float: right;
+  margin-right: -123px;
+  margin-left: auto;
+  position: relative;
+  z-index: 11;
 }
 
-/* Hide all steps by default: */
-.tab {
+@media (max-width: 767px) {
+  .experience-border {
+    padding: 17px;
+    border: 1px solid #ACA79A;
+    display: block;
+    width: 300px;
+    border-radius: 90px;
+    z-index: 10000000;
+    position: relative;
+    background: #fff;
+    margin: 0 auto;
+  }
+
+  .experience-border-2 {
+    background: #fff;
+    border: 1px solid #ACA79A;
+    border-radius: 103px;
+    display: block;
+    position: relative;
+    z-index: 11;
+    float: none;
+    padding: 17px;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+} 
+
+@media (max-width: 1650px) and (min-width: 1024px) {
+  .wpo-hero-style-1 .wpo-hero-title h2.wpo-hero-title-2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  .wpo-hero-style-1 .wpo-hero-title-box, .wpo-hero-style-2 .wpo-hero-title-box {
+    padding: 20px;
+    background: #EAE6DC;
+    border-radius: 150px;
+    margin-left: -61px;
+    margin-right: -115px;
+    position: relative;
+    max-width: 690px;
+    overflow: hidden;
+    margin-bottom: 158px;
+    z-index: 11;
+}
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+.experience-border-2 {
+  padding: 17px;
+  background: #fff;
+  max-width: 305px;
+  border: 1px solid #ACA79A;
+  border-radius: 103px;
+  display: inline-block;
+  float: right;
+  margin-right: -85px;
+  margin-left: auto;
+  position: relative;
+  z-index: 11;
+  }
+  .wpo-hero-style-1 .wpo-hero-title h2.wpo-hero-title-2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  .wpo-hero-style-1 .wpo-supporter .wpo-supporter-text h3, .wpo-hero-style-2 .wpo-supporter .wpo-supporter-text h3 {
+    font-size:28px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 0px;
+    font-family: "Roboto Serif", serif;
+  }
+  .wpo-hero-style-1 .wpo-supporter .wpo-supporter-text h3, .wpo-hero-style-2 .wpo-supporter .wpo-supporter-text h3 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 0px;
+    font-family: "Roboto Serif", serif;
+  }
+}
+
+
+/* ----------------footer------------------- */
+
+.copyright-wrap {
+  padding: 22px 0;
+  margin-top: 20px;
+}
+
+.copyright-wrap {
+  border-top: 1px solid #5A5A5A;
+}
+
+.copyright-wrap p, .copyright-wrap a {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #5A5A5A;
+}
+.copyright-text {
+  margin: 0;
+  color: #5A5A5A;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.social-btn.style3 a {
+  background: transparent;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  border-radius: 0;
+  color: #5A5A5A;
+  border: 0;
+  font-size: 20px;
+}
+
+.social-btn {
+  display: flex;
+  gap: 30px;
+}
+
+
+.wpo-service-single-title h3{
+  font-size: 22px;
+}
+
+.hide{
   display: none;
 }
 
-button {
-  background-color: #04AA6D;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 17px;
-  font-family: Raleway;
+/* #femaleCont{
+  display: none;
+} */
+
+
+.mainBox {
+  width: 660px;
+  height: 650px;
+  background-color: #004585;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.smallBox{
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: #a1b3cd;
+  font-size: 120px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-#prevBtn {
-  background-color: #bbbbbb;
-}
-
-/* Make circles that indicate the steps of the form: */
-.step {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-  border: none;  
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.5;
-}
-
-.step.active {
-  opacity: 1;
-}
-
-/* Mark the steps that are finished and valid: */
-.step.finish {
-  background-color: #04AA6D;
 }
